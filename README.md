@@ -1,4 +1,5 @@
 Matrix
 ======
 
-A basic program in c language to do operations with a basic matrix
+- This first program set a basic matrix in c language
+- I'm running this code in NetBeans with cygwin compiler 
