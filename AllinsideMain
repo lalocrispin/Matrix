@@ -1,0 +1,39 @@
+#include<stdio.h>
+#define MAX 10
+int main()
+{
+    int mtrz[MAX][MAX], c, r, i=0, j=0;
+    printf("Cuantas columnas quieres ");
+    scanf("%d", &c);
+    printf("Cuantos renglones quieres ");
+    scanf("%d", &r);
+    for(i = 0;i < r;i++)/*RUTINA PARA LEER LOS DATOS*/
+    {
+      for(j = 0;j < c;j++)
+      {
+              printf("Escribe los valores [%d][%d]==>\t", i+1, j+1);
+              scanf("%d", &mtrz[i][j]);
+      }
+    }
+    printf("\nMatriz original");/*RUTINA PARA IMPRIMIR*/
+    printf("\n\n");
+    for(i=0; i<r; i++)
+    {
+      printf("\n\t");
+      for(j=0; j<c; j++)
+      {
+          printf("%6d", mtrz[i][j]);
+      }
+    }
+    printf("\nMatriz transpuesta");/*IMPRIMIR MATRIZ TRANSPUESTA*/
+    printf("\n\n");
+    for(i=0; i<c; i++)
+    {
+      printf("\n\t");
+      for(j=0; j<r; j++)
+      {   
+          printf("%6d", mtrz[j][i]);
+      }
+    }
+    return 0;
+}
